@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<ul>
+				 	<li><a href="#">Информация</a></li>
+				 	<li class="offset"><a href="#">Фото и видео</a></li>
+				 	<li><a href="#">Карта штата</a></li>
+				 	<li><a href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+
+<!--Filtres-row -->
+		<div class="filtres-row">
+			<form method="post" action="/echo">
+				<div class="filter-infrastructure to-left">
+					<div class="filter-title">Инфраструктура:</div>
+					<input type="radio" name="infrastructure" id="infrastructure-field">
+					<label for="infrastructure-field">Бассейн</label>
+					<input type="radio" name="parking" id="parking-field">
+					<label for="parking-field">Парковка</label>
+					<input type="radio" name="wifi" id="wifi-field">
+					<label for="wifi-field">Wi-Fi</label>
+				</div>
+				<div class="filter-home to-left">
+					<div class="filter-title">Тип жилья:</div>
+					<input type="radio" name="hotel" id="hotel-field">
+					<label for="hotel-field">Гостиница</label>
+					<input type="radio" name="motel" id="motel-field">
+					<label for="motel-field">Мотель</label>
+					<input type="radio" name="apartment" id="apartment-field">
+					<label for="apartment-field">Апартаменты</label>
+				</div>
+				<div class="filter-range to-right">
+					<div class="filter-title">Стоимость в сутки(р)</div>
+					<div class="price-controls">
+						от <input type="text" class="min-price" value="0">
+						до <input type="text" class="max-price" value="3000">
+					</div>
+						<input type="range">
+					<input type="button" class="btn" value="Показать">
+				</div>
+			</form>
+		</div>
+
+<!-- Sorting-row -->
+		<div class="sorting-row">
+			<div class="sorting-title">Найдено: 3</div>
+			<div class="sorting-type">
+				Сортировка:
+				<a href="#">По цене</a>
+				<a href="#">По типу</a>
+				<a href="#">По рейтингу</a>
+			</div>
+		</div>
+
+<!-- Found-content -->
+		<div class="found-content">
+			<article class="found-item">
+				<div class="found-item-image"><img src="http://placehold.it/135x90" width="135" height="90" alt=""></div>
+				<h2 class="found-item-title">Amara resort & spa</h2>
+				<div class="home-type">Гостиница</div>
+				<div class="home-price">От 3500 р.</div>
+				<a href="#" class="btn">Подробнее</a>
+				<a href="#" class="btn">Забронировать</a>
+			</article>
+			<article class="found-item">
+				<div class="found-item-image"><img src="http://placehold.it/135x90" width="135" height="90" alt=""></div>
+				<h2 class="found-item-title">Desert quail inn</h2>
+				<div class="home-type">Мотель</div>
+				<div class="home-price">От 2000 р.</div>
+				<a href="#" class="btn">Подробнее</a>
+				<a href="#" class="btn">Забронировать</a>
+			</article>
+			<article class="found-item">
+				<div class="found-item-image"><img src="http://placehold.it/135x90" width="135" height="90" alt=""></div>
+				<h2 class="found-item-title">villas at poco diablo</h2>
+				<div class="home-type">Апартаменты</div>
+				<div class="home-price">От 4000 р.</div>
+				<a href="#" class="btn">Подробнее</a>
+				<a href="#" class="btn">Забронировать</a>
+			</article>
+		</div>
+
+<!-- Footer -->
+		<footer class="main-footer">
+			<div class="container clearfix">
+				<div class="footer-contacts">#Visitsedona</div>
+				<div class="footer-social">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-yt">Ютуб</a>
+				</div>
+				<div class="footer-copyright">website by: <a href="#"><img src="http://placehold.it/135x33" width="135" height="33" alt=""></a></div>
+			</div>					
+		</footer>	
+	</div>
+</body>
+</html>
