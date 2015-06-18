@@ -22,7 +22,7 @@
 
 <!--Filtres-row -->
 		<div class="filtres-row">
-			<form method="post" action="/echo">
+			<form class="clearfix" method="post" action="/echo">
 				<div class="filter-infrastructure to-left">
 					<div class="filter-title">Инфраструктура:</div>
 					<input type="radio" name="infrastructure" id="infrastructure-field">
@@ -47,8 +47,12 @@
 						от <input type="text" class="min-price" value="0">
 						до <input type="text" class="max-price" value="3000">
 					</div>
-						<input type="range">
-					<input type="button" class="btn" value="Показать">
+					<div class="range-controls">
+						<div class="scale"><div class="bar"></div></div>
+						<div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+					</div>
+					<input type="submit" class="btn" value="Показать">
 				</div>
 			</form>
 		</div>
